@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Her Second Spring</title>
+	<link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.2/marked.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+
+		    <h1>Her Second Spring</h1>
+		    <p>A simple guide to nutrition, movement, and self-care through menopause</p>
+		</div>
+		
+	</header>
+	<section class="checklist">
+		<h2>What are you experiencing?</h2>
+		<p>Select your symptoms to see tips tailored to you:</p>
+		<label><input type="checkbox" value="hotflashes">Hot flashes</label>
+		<label><input type="checkbox" value="mood">Mood swings</label>
+		<label><input type="checkbox" value="sleep">Sleep issues</label>
+		<label><input type="checkbox" value="joint">Joint aches</label>
+
+		<div id="results"></div>
+	</section>
+    <main>
+    	<section class="branding">
+    		<h2>Nutrition</h2>
+    		<p>What you eat can ease symptoms and support your body through hormonal changes.</p>
+    		<ul>
+    			<li>Calcium-rich foods(dairy, leafy greens) to protect bone density</li>
+    			<li>Phytoestrogen sources like soy and flaxseed may help balance hormones</li>
+    			<li>Limiting caffeine and alcohol can reduce hot flashes for some women</li>
+    		</ul>
+    	</section>
+    	<section class="branding">
+    		<h2>Exercise</h2>
+    		<p>moving your body is must,few exercises which may help.</p>
+    		<ul>
+    		    <li>Walking or low impact cardio helps manage weight changes and supports heart health</li>
+    		    <li>Strength training helps counter bone density loss during menopause</li>
+    		    <li>Yoga or stretching can ease joint stiffness and improve sleep</li>
+    		</ul>
+    	</section>
+    	<section class="branding">
+    		<h2>Symptoms</h2>
+    		<p>Hot Flashes,Mood Swings,sleep issues,Weakness,vaginal dryness or discomfort,joint aches.</p>
+    		<ul>
+    			<li>keep a fan or cold water nearby, avoid spicy foods</li>
+    			<li>regular sleep and light exercise can help stabilize mood</li>
+    			<li>consult a doctor if dryness remains</li>
+    			<li>gentle stretching and staying hydrated often eases stiffness</li>
+    		</ul>
+    	</section>
+    	<section class="branding">
+    		<h2>Self Care</h2>
+    		<p>prioritize your health and maintain your mental peace</p>
+    		<ul>
+
+    	        <li>this phase can be physically taxing,so don't feel guilty about slowing down</li>
+    			<li>talking to friends,family or support groups who understand this phase helps a lot emotionally</li>
+    			<li>noting patterns helps you and your doctor find what works</li>
+    			<li>Be patient with your body,take deep breaths,medidate.</li>
+    		</ul>
+    	</section>
+    	<section class="branding">
+    		<h2>WHEN TO SEE A DOCTOR!</h2>
+    		<ul>
+    			<li>Very heavy or irregular bleeding</li>
+    			<li>Severe mood changes,anxiety or depression that affect daily life</li>
+    			<li>Symptoms that suddenly worsen or feel unusal</li>
+    			<li>Bone density concerns</li>
+    		</ul>
+    	</section>
+    	<section class="branding">
+    		<h2>FAQs</h2>
+
+    		<div class="faq-item">
+    			<button class="faq-question">Is menopause the same for everyone?</button>
+    			<p class="faq-answer">No..timing, symptoms, and severity vary widely from person to person</p>
+    		</div>
+
+    		<div class="faq-item">
+    			<button class="faq-question">Can diet really affect symptoms?</button>
+                <p class="faq-answer">Yes, certain foods can trigger or ease symptoms like hot flashes for many women.</p>
+            </div>
+            <div class="faq-item">
+            <button class="faq-question">At what age does menopause usually start?</button>
+            <p class="faq-answer">Most women reach menopause between ages 45 and 55, with the average around 51.</p>
+            </div>
+
+            <div class="faq-item">
+            <button class="faq-question">How long do symptoms typically last?</button>
+            <p class="faq-answer">Symptoms can last anywhere from a few months to several years.. it varies a lot from person to person.</p>
+            </div>
+
+            <div class="faq-item">
+            <button class="faq-question">Is hormone therapy safe?</button>
+            <p class="faq-answer">It can help many women, but it's not right for everyone.. it's a decision to make with a doctor based on your health history.</p>
+            </div>
+
+            <div class="disclaimer">
+            <p>⚠️ This site is for general educational purposes only and is not a substitute for professional medical advice. Please consult a doctor for guidance specific to your health.</p>
+            </div>
+
+            <button id="theme-toggle">🌙Dark Mode</button>
+        </section>
+
+        <section class="branding">
+        	<h2>Daily Water Intake Calculator</h2>
+        	<p>Enter your weight to get a rough daily water intake target</p>
+        	<input type="number" id="weight-input" placeholder="weght in kg">
+        	<button id="calculate-water">calculate</button>
+
+        	<p id="water-result"></p>
+        </section>
+
+        <section class="branding">
+        	<h2>BMI Calculator</h2>
+        	<p>Enter your height and weight to check your BMI category.</p>
+            <input type="number" id="height-input" placeholder="Height in cm">
+        	<input type="number" id="bmi-weight-input" placeholder="weight in kg">
+        	<button id="calculate-bmi">Calculate BMI</button>
+
+        	<p id="bmi-result"></p>
+        </section>
+
+        <!-- <section class="branding">
+        	<h2>Reminders</h2>
+        	<div id="reminders-list"></div>
+        </section> -->
+
+        <section class="branding">
+            <h2>Reminders</h2>
+            <input type="text" id="new-reminder-input" placeholder="Add a reminder">
+            <button id="add-reminder-btn">Add</button>
+            <div id="reminders-list"></div>
+        </section>
+
+        <section class="branding">
+            <h2>Ask a Question</h2>
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Ask about menopause...">
+            <button id="chat-send-btn">Send</button>
+        </section>
+
+
+
+
+	
+    </main>
+</body>
+
+<script src="script.js"></script>
+</html>
