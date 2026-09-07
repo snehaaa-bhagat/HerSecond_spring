@@ -77,7 +77,7 @@ calculateBmiButton.addEventListener('click', function(){
 });
 
 const reminderList= document.getElementById('reminders-list');
-fetch('http://127.0.0.1:5000/reminders')
+fetch('https://snehabhagat.pythonanywhere.com/reminders')  
    .then(response => response.json())
    .then(data => {
    	 let output="";
@@ -93,7 +93,7 @@ const newReminderInput = document.getElementById('new-reminder-input');
 addReminderBtn.addEventListener('click', function() {
   const reminderText = newReminderInput.value;
 
-  fetch('http://127.0.0.1:5000/reminders', {
+  fetch('https://snehabhagat.pythonanywhere.com/reminders', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ reminder: reminderText })
@@ -115,7 +115,7 @@ const chatSendBtn = document.getElementById('chat-send-btn');
 chatSendBtn.addEventListener('click', function() {
   const userMessage = chatInput.value;
 
-  fetch('http://127.0.0.1:5000/chat', {
+  fetch('https://snehabhagat.pythonanywhere.com/chat',{
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ message: userMessage })
