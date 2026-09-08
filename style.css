@@ -120,6 +120,7 @@ main{
   border-bottom: 1px solid #eee;
   padding: 12px 0;
 }
+
 .faq-question {
   width: 100%;
   text-align: left;
@@ -127,20 +128,19 @@ main{
   border: none;
   font-family: Georgia, serif;
   font-size: 1.05rem;
-  color:black;
+  color: var(--text);
   padding: 8px 0;
   cursor: pointer;
   font-weight: bold;
 }
+
 .faq-answer {
   display: none;
   font-size: 1.0rem;
   padding: 8px 0 0 0;
-  color: black;
+  color: var(--text);
 }
-.faq-answer.show {
-  display: block;
-}
+
 .disclaimer {
   max-width: 800px;
   margin: 20px auto 0;
