@@ -115,10 +115,10 @@ const chatSendBtn = document.getElementById('chat-send-btn');
 chatSendBtn.addEventListener('click', function() {
   const userMessage = chatInput.value;
 
-  fetch('https://snehabhagat.pythonanywhere.com/chat',{
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ message: userMessage })
+fetch('https://snehabhagat.pythonanywhere.com/chat', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ message: userMessage, secret: "her-second-spring-2026" })
   })
     .then(response => response.json())
     .then(data => {
